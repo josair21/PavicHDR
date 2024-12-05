@@ -1,0 +1,40 @@
+ 
+:: initializing oneAPI environment ...
+   slurm_script: BASH_VERSION = 4.4.20(1)-release
+   args: Using "$@" for setvars.sh arguments: 
+:: advisor -- latest
+:: ccl -- latest
+:: clck -- latest
+:: compiler -- latest
+:: dal -- latest
+:: debugger -- latest
+:: dev-utilities -- latest
+:: dnnl -- latest
+:: dpcpp-ct -- latest
+:: dpl -- latest
+:: inspector -- latest
+:: ipp -- latest
+:: ippcp -- latest
+:: ipp -- latest
+:: itac -- latest
+:: mkl -- latest
+:: mpi -- latest
+:: tbb -- latest
+:: vtune -- latest
+:: oneAPI environment initialized ::
+ 
+job start time is Tue Dec 3 11:49:39 -05 2024
++ srun -N1 -n1 --cpu_bind=cores -l --nodelist=gn01 --cpus-per-task=96 singularity exec --nv -B /home/urso -B /scratch --pwd /home/urso/PavicHDR/logs /home/urso/.lico/container/Python.sif bash /home/urso/PavicHDR/train.sh
+0: Traceback (most recent call last):
+0:   File "/home/urso/PavicHDR/train.py", line 344, in <module>
+0:     main()
+0:   File "/home/urso/PavicHDR/train.py", line 275, in main
+0:     model = PavicHDR()
+0:             ^^^^^^^^^^
+0:   File "/home/urso/PavicHDR/models/PavicHDR.py", line 85, in __init__
+0:     nn.PConv2d(embbed_dim // 3, embbed_dim // 3, 3, 1, 1),
+0:     ^^^^^^^^^^
+0: AttributeError: module 'torch.nn' has no attribute 'PConv2d'. Did you mean: 'Conv2d'?
+srun: error: gn01: task 0: Exited with exit code 1
++ set +x
+job end time is Tue Dec 3 11:49:59 -05 2024

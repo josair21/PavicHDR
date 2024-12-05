@@ -1,0 +1,1782 @@
+ 
+:: initializing oneAPI environment ...
+   slurm_script: BASH_VERSION = 4.4.20(1)-release
+   args: Using "$@" for setvars.sh arguments: 
+:: advisor -- latest
+:: ccl -- latest
+:: clck -- latest
+:: compiler -- latest
+:: dal -- latest
+:: debugger -- latest
+:: dev-utilities -- latest
+:: dnnl -- latest
+:: dpcpp-ct -- latest
+:: dpl -- latest
+:: inspector -- latest
+:: ipp -- latest
+:: ippcp -- latest
+:: ipp -- latest
+:: itac -- latest
+:: mkl -- latest
+:: mpi -- latest
+:: tbb -- latest
+:: vtune -- latest
+:: oneAPI environment initialized ::
+ 
+job start time is Wed Dec 4 18:06:43 -05 2024
++ srun -N1 -n1 --cpu_bind=cores -l --nodelist=gn03 --cpus-per-task=96 singularity exec --nv -B /home/urso -B /scratch --pwd /home/urso/PavicHDR/logs /home/urso/.lico/container/Python.sif bash /home/urso/PavicHDR/train.sh
+0: ===> Start training 
+0: 
+0:         Dataset dir:     /home/urso/Datasets/Kalantari/
+0:         Subset:          sig17_training_crop128_stride64
+0:         Epochs:          100
+0:         Batch size:      32
+0:         Learning rate:   0.0002
+0:         Training size:   68376
+0:         Device:          cuda
+0:         
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.2409, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.24085277318954468
+0: tensor(0.2495, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.24952542781829834
+0: tensor(0.2480, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.24803195893764496
+0: tensor(0.2520, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.25201302766799927
+0: tensor(0.2547, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.2547155022621155
+0: tensor(0.2653, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.2653355896472931
+0: tensor(0.2640, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.26401543617248535
+0: tensor(0.2498, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.24981890618801117
+0: tensor(0.2586, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.25856828689575195
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.2265, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.22651760280132294
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1918, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.19184906780719757
+0: tensor(0.2097, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.20971016585826874
+0: tensor(0.1995, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1994658261537552
+0: tensor(0.1748, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.17481756210327148
+0: tensor(0.2419, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.24189449846744537
+0: tensor(0.2294, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.22936823964118958
+0: tensor(0.2346, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.2346004843711853
+0: tensor(0.2546, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.2545633316040039
+0: tensor(0.2480, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.24804402887821198
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.2217, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.22172811627388
+0: tensor(0.2138, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.2138090580701828
+0: tensor(0.2477, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.24765783548355103
+0: tensor(0.2508, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.2507554292678833
+0: tensor(0.2336, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.23358052968978882
+0: tensor(0.2363, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.2363390475511551
+0: tensor(0.2350, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.2349933236837387
+0: tensor(0.2223, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.22225306928157806
+0: tensor(0.2252, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.22515341639518738
+0: tensor(0.1781, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.17811469733715057
+0: tensor(0.2252, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.22522884607315063
+0: tensor(0.2093, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.20925284922122955
+0: tensor(0.2404, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.24042358994483948
+0: tensor(0.2379, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.2379259169101715
+0: tensor(0.2210, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.22097162902355194
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1961, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.19611510634422302
+0: tensor(0.1931, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.19312946498394012
+0: tensor(0.2002, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.2002270668745041
+0: tensor(0.1819, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.18191391229629517
+0: tensor(0.2298, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.2298009693622589
+0: tensor(0.2268, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.22684448957443237
+0: tensor(0.2130, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.2130099982023239
+0: tensor(0.1954, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1954113095998764
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.2050, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.2050052285194397
+0: tensor(0.1832, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1832370162010193
+0: tensor(0.1735, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.17348219454288483
+0: tensor(0.1801, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1800929307937622
+0: tensor(0.2002, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.20017948746681213
+0: tensor(0.1976, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1975983828306198
+0: tensor(0.2147, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.2147161364555359
+0: tensor(0.2062, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.20621420443058014
+0: tensor(0.2030, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.20299091935157776
+0: tensor(0.2143, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.21431690454483032
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1736, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.17362356185913086
+0: tensor(0.2085, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.20846600830554962
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.2127, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.21272830665111542
+0: tensor(0.2147, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.21474584937095642
+0: tensor(0.2540, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.2540356516838074
+0: tensor(0.2124, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.2123660147190094
+0: tensor(0.1849, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.18489226698875427
+0: tensor(0.2033, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.20332591235637665
+0: tensor(0.1819, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1819261759519577
+0: tensor(0.1839, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.18389858305454254
+0: tensor(0.2324, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.23239700496196747
+0: tensor(0.1707, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.17071785032749176
+0: tensor(0.1780, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1780477613210678
+0: tensor(0.1838, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1837710738182068
+0: tensor(0.1835, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.18352489173412323
+0: tensor(0.1888, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.18878716230392456
+0: tensor(0.1341, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.13409753143787384
+0: tensor(0.1220, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.12197332084178925
+0: tensor(0.1617, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1617104709148407
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.2514, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.25144559144973755
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.2103, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.2103354036808014
+0: tensor(0.2063, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.20626717805862427
+0: tensor(0.1785, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.17852438986301422
+0: tensor(0.1866, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1865689754486084
+0: tensor(0.1782, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.17816956341266632
+0: tensor(0.1885, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.18848995864391327
+0: tensor(0.1269, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1269470453262329
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1738, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.17379769682884216
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1623, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1623345911502838
+0: tensor(0.1600, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.16003206372261047
+0: tensor(0.1672, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1671525537967682
+0: tensor(0.1612, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.16124273836612701
+0: tensor(0.2016, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.20155733823776245
+0: tensor(0.1597, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.15967923402786255
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1889, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.18892908096313477
+0: tensor(0.1356, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.135570228099823
+0: tensor(0.1634, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.16337689757347107
+0: tensor(0.1744, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.17443375289440155
+0: tensor(0.1612, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1612136960029602
+0: tensor(0.1505, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.15046106278896332
+0: tensor(0.1677, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.16767051815986633
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1749, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.17491167783737183
+0: tensor(0.1569, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.15688301622867584
+0: tensor(0.1766, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.17658913135528564
+0: tensor(0.1581, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1580776423215866
+0: tensor(0.1651, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.16505067050457
+0: tensor(0.1464, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.14639337360858917
+0: tensor(0.1641, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.16407348215579987
+0: tensor(0.1890, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1890244334936142
+0: tensor(0.1297, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.12970305979251862
+0: tensor(0.1487, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1487330049276352
+0: tensor(0.1520, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.15198931097984314
+0: tensor(0.1667, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1667463779449463
+0: tensor(0.1254, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.12539875507354736
+0: tensor(0.1212, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.12121140956878662
+0: tensor(0.1249, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.12493684887886047
+0: tensor(0.1409, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.14091856777668
+0: tensor(0.1351, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.13510577380657196
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1277, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.12772804498672485
+0: tensor(0.1300, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.13000424206256866
+0: tensor(0.1203, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.12029311060905457
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1284, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.12842996418476105
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1266, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.12656423449516296
+0: tensor(0.1068, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.10684865713119507
+0: tensor(0.1141, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.11408036202192307
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1277, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.12766866385936737
+0: tensor(0.1163, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.11625969409942627
+0: tensor(0.1117, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1117023229598999
+0: tensor(0.1042, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.10423048585653305
+0: tensor(0.1378, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.13777101039886475
+0: tensor(0.1314, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.13138680160045624
+0: tensor(0.1086, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.10860421508550644
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1209, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.12089589983224869
+0: tensor(0.1049, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1049409732222557
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1681, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1681174784898758
+0: tensor(0.1696, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1695665568113327
+0: tensor(0.1704, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.17037822306156158
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1465, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.14651308953762054
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1615, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.16145016252994537
+0: tensor(0.1625, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1624557226896286
+0: tensor(0.1636, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.16364189982414246
+0: tensor(0.1582, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.158222496509552
+0: tensor(0.1628, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1628333479166031
+0: tensor(0.1540, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.15397538244724274
+0: tensor(0.1481, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.14806300401687622
+0: tensor(0.1358, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.13578742742538452
+0: tensor(0.1492, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.14924384653568268
+0: tensor(0.1424, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.14244262874126434
+0: tensor(0.1606, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.16064706444740295
+0: tensor(0.1448, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1448042094707489
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1298, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1298435777425766
+0: tensor(0.1279, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.12790997326374054
+0: tensor(0.1238, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.12384321540594101
+0: tensor(0.1328, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.13275949656963348
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1602, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.16021758317947388
+0: tensor(0.1848, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.18483883142471313
+0: tensor(0.1734, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.17335301637649536
+0: tensor(0.1780, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.17796950042247772
+0: tensor(0.1765, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.17650854587554932
+0: tensor(0.2281, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.228074848651886
+0: tensor(0.1780, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1780368983745575
+0: tensor(0.1845, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.18454399704933167
+0: tensor(0.1652, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.16516810655593872
+0: tensor(0.1579, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.15791577100753784
+0: tensor(0.1650, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.16503840684890747
+0: tensor(0.1468, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.14680324494838715
+0: tensor(0.1634, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.16340725123882294
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1312, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.13124313950538635
+0: tensor(0.1372, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.13721038401126862
+0: tensor(0.1344, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.13439080119132996
+0: tensor(0.1390, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.13901597261428833
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1891, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.18913251161575317
+0: tensor(0.1967, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.19669128954410553
+0: tensor(0.1434, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1434078812599182
+0: tensor(0.1263, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.12632803618907928
+0: tensor(0.1710, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.17104284465312958
+0: tensor(0.1467, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1466805636882782
+0: tensor(0.2027, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.20267798006534576
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.2088, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.2088223099708557
+0: tensor(0.2075, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.2074672281742096
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.2297, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.22967705130577087
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1373, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.13730071485042572
+0: tensor(0.1311, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.13110607862472534
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1759, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1758592426776886
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1996, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.19955535233020782
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1911, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.19111181795597076
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1862, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.18617187440395355
+0: tensor(0.1785, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.17849430441856384
+0: tensor(0.2059, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.20586355030536652
+0: tensor(0.2048, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.20475295186042786
+0: tensor(0.1709, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.17091971635818481
+0: tensor(0.1887, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.18870732188224792
+0: tensor(0.1606, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.16062401235103607
+0: tensor(0.1817, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.18171033263206482
+0: tensor(0.1747, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.17466801404953003
+0: tensor(0.2106, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.21056775748729706
+0: tensor(0.1549, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.15487080812454224
+0: tensor(0.1180, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.11804318428039551
+0: tensor(0.1769, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1769142746925354
+0: tensor(0.1371, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.13711537420749664
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1292, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1292428970336914
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1905, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.190542072057724
+0: tensor(0.2201, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.2200533002614975
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1982, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.19820745289325714
+0: tensor(0.2251, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.22510769963264465
+0: tensor(0.1901, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.19012142717838287
+0: tensor(0.1666, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.16657385230064392
+0: tensor(0.1859, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.18592260777950287
+0: tensor(0.1951, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1951083540916443
+0: tensor(0.1753, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1752689629793167
+0: tensor(0.1990, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.19898808002471924
+0: tensor(0.1922, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1922367811203003
+0: tensor(0.1774, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.17738571763038635
+0: tensor(0.1783, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.17832215130329132
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1533, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1533178687095642
+0: tensor(0.1865, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.18647536635398865
+0: tensor(0.1687, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.16874229907989502
+0: tensor(0.2035, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.20352645218372345
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1912, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.19117017090320587
+0: tensor(0.1557, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.15574386715888977
+0: tensor(0.2095, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.20952749252319336
+0: tensor(0.2160, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.21596314013004303
+0: tensor(0.2433, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.24328061938285828
+0: tensor(0.1778, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1777639091014862
+0: tensor(0.1901, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1901145726442337
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1846, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.18455742299556732
+0: tensor(0.1755, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.17547255754470825
+0: tensor(0.1982, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.19816838204860687
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1992, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1992105394601822
+0: tensor(0.1829, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.18291547894477844
+0: tensor(0.2130, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.21295063197612762
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.2395, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.23945380747318268
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.2226, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.22264781594276428
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1573, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1572805494070053
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1387, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.13867264986038208
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1340, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.13402175903320312
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1205, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.12053924798965454
+0: tensor(0.1286, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.12859226763248444
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1717, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.17168214917182922
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1446, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1446370780467987
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1865, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1864670217037201
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1979, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.19785742461681366
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.2173, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.21734556555747986
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.2232, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.2232021689414978
+0: tensor(0.2005, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.20045587420463562
+0: tensor(0.2127, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.2126682549715042
+0: tensor(0.1940, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.19399616122245789
+0: tensor(0.1835, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.18350645899772644
+0: tensor(0.2182, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.21817247569561005
+0: tensor(0.1954, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.19535531103610992
+0: tensor(0.2216, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.22163061797618866
+0: tensor(0.2069, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.20688095688819885
+0: tensor(0.1999, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1999151110649109
+0: tensor(0.1811, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.18109233677387238
+0: tensor(0.1884, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.18839123845100403
+0: tensor(0.2051, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.20507049560546875
+0: tensor(0.1962, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1962253451347351
+0: tensor(0.2116, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.211642786860466
+0: tensor(0.1714, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.17143882811069489
+0: tensor(0.1620, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1620340347290039
+0: tensor(0.1386, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.13859255611896515
+0: tensor(0.1678, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.16778115928173065
+0: tensor(0.1784, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.17837436497211456
+0: tensor(0.1751, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.17510107159614563
+0: tensor(0.1474, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.14739859104156494
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1586, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1586117446422577
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1678, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.16777561604976654
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1225, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.12246859818696976
+0: tensor(0.1561, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.15613587200641632
+0: tensor(0.1459, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.14588838815689087
+0: tensor(0.1545, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1544998288154602
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1772, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1771816909313202
+0: tensor(0.1771, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.17706477642059326
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1941, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1941162347793579
+0: tensor(0.1629, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.16289836168289185
+0: tensor(0.1833, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1832624226808548
+0: tensor(0.1652, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.16523970663547516
+0: tensor(0.1771, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1771213710308075
+0: tensor(0.1437, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1436801552772522
+0: tensor(0.1574, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1574280560016632
+0: tensor(0.1554, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.15538138151168823
+0: tensor(0.1808, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.18076741695404053
+0: tensor(0.1483, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.14830490946769714
+0: tensor(0.1771, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.17706798017024994
+0: tensor(0.1447, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.14473503828048706
+0: tensor(0.1451, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.14513123035430908
+0: tensor(0.1493, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.14925289154052734
+0: tensor(0.1537, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.15374042093753815
+0: tensor(0.1604, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.16039203107357025
+0: tensor(0.1572, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1572481393814087
+0: tensor(0.1547, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.15467798709869385
+0: tensor(0.1285, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.12853287160396576
+0: tensor(0.1217, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.12170694023370743
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1516, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.15162919461727142
+0: tensor(0.1246, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.12459676712751389
+0: tensor(0.1330, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1330028921365738
+0: tensor(0.1521, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1521090418100357
+0: tensor(0.1421, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.14208540320396423
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.0994, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.09937281161546707
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1262, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.12618611752986908
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1440, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.14399300515651703
+0: tensor(0.1339, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1338905543088913
+0: tensor(0.1265, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.12650750577449799
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1266, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.12661203742027283
+0: tensor(0.1255, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.12551768124103546
+0: tensor(0.1230, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.12297023832798004
+0: tensor(0.1136, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.11363262683153152
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.0805, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.08052036911249161
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.0873, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.08733192086219788
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.0732, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.07321356981992722
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1241, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.12413635849952698
+0: tensor(0.1425, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.14250585436820984
+0: tensor(0.1813, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.18128444254398346
+0: tensor(0.1406, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.14064845442771912
+0: tensor(0.1484, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1484251767396927
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1399, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.13986001908779144
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1555, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1555355340242386
+0: tensor(0.1294, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.12941981852054596
+0: tensor(0.1750, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.17496442794799805
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1605, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1604996621608734
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1537, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.15366876125335693
+0: tensor(0.1541, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.15412165224552155
+0: tensor(0.1468, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.14683222770690918
+0: tensor(0.1473, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1472848355770111
+0: tensor(0.1659, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1658884435892105
+0: tensor(0.1177, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.11772733926773071
+0: tensor(0.1315, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.13146813213825226
+0: tensor(0.1259, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1258649379014969
+0: tensor(0.1155, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.11545076966285706
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1668, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.16679687798023224
+0: tensor(0.2159, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.21594546735286713
+0: tensor(0.2405, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.24054236710071564
+0: tensor(0.2498, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.249801903963089
+0: tensor(0.2703, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.27030149102211
+0: tensor(0.2395, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.2394503504037857
+0: tensor(0.2716, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.2716376483440399
+0: tensor(0.2394, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.23943011462688446
+0: tensor(0.2888, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.28875023126602173
+0: tensor(0.2125, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.2125392109155655
+0: tensor(0.2408, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.2408452033996582
+0: tensor(0.2217, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.22174544632434845
+0: tensor(0.2375, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.23745307326316833
+0: tensor(0.2416, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.24161715805530548
+0: tensor(0.2337, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.23372896015644073
+0: tensor(0.1854, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.18539762496948242
+0: tensor(0.1998, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.19979572296142578
+0: tensor(0.1742, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1741826832294464
+0: tensor(0.2088, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.2087526023387909
+0: tensor(0.1724, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.17236623167991638
+0: tensor(0.2117, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.21167299151420593
+0: tensor(0.1782, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.17823109030723572
+0: tensor(0.1966, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.19656029343605042
+0: tensor(0.2006, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.20057673752307892
+0: tensor(0.2136, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.21363425254821777
+0: tensor(0.1829, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.18288087844848633
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.2196, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.21963177621364594
+0: tensor(0.1796, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.17964830994606018
+0: tensor(0.1942, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.19421149790287018
+0: tensor(0.1850, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.18504226207733154
+0: tensor(0.1790, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.17898331582546234
+0: tensor(0.1604, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.16043347120285034
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1700, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.17004476487636566
+0: tensor(0.1465, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.14651821553707123
+0: tensor(0.1671, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1671445071697235
+0: tensor(0.1637, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.16367773711681366
+0: tensor(0.1576, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1575603485107422
+0: tensor(0.1350, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.13497108221054077
+0: tensor(0.1460, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1460302621126175
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1887, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.18870390951633453
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1647, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.16468359529972076
+0: tensor(0.1492, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.14920338988304138
+0: tensor(0.1303, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.13030573725700378
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1643, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.16431742906570435
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1800, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1799793541431427
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.2161, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.21610450744628906
+0: tensor(0.2048, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.2048291265964508
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1772, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.17724929749965668
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1287, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.12873956561088562
+0: tensor(0.1531, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.15310101211071014
+0: tensor(0.1581, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.15806986391544342
+0: tensor(0.1388, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.13879166543483734
+0: tensor(0.1498, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.14978353679180145
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1544, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1544259935617447
+0: tensor(0.1296, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.12956734001636505
+0: tensor(0.1575, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.15749385952949524
+0: tensor(0.1439, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.143865168094635
+0: tensor(0.1492, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1492094099521637
+0: tensor(0.1358, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.13576313853263855
+0: tensor(0.1505, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.15050917863845825
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1518, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.15176922082901
+0: tensor(0.1245, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.12449311465024948
+0: tensor(0.1738, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.17383988201618195
+0: tensor(0.1271, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.12712521851062775
+0: tensor(0.1659, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1658817082643509
+0: tensor(0.1533, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1532709300518036
+0: tensor(0.1298, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.12976768612861633
+0: tensor(0.1279, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.12790079414844513
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1281, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1281094253063202
+0: tensor(0.1314, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.13143891096115112
+0: tensor(0.1207, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.12067940831184387
+0: tensor(0.1213, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.12128397822380066
+0: tensor(0.1407, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.14069592952728271
+0: tensor(0.1404, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1403503566980362
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1090, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.10901466757059097
+0: tensor(0.1302, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.13020218908786774
+0: tensor(0.1197, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.11965570598840714
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(nan, device='cuda:0', grad_fn=<AddBackward0>)
+0: nan
+0: tensor(0.1244, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.12437041848897934
+0: tensor(0.1588, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.15875759720802307
+0: tensor(0.1162, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.116233229637146
+0: tensor(0.1099, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.10991330444812775
+0: tensor(0.1258, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1258486956357956
+0: tensor(0.1214, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.12141823768615723
+0: tensor(0.1382, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.13815447688102722
+0: tensor(0.1317, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.13169938325881958
+0: tensor(0.1434, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.1433541625738144
+0: tensor(0.1227, device='cuda:0', grad_fn=<AddBackward0>)
+0: 0.12271087616682053
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** JOB 2328 ON gn03 CANCELLED AT 2024-12-04T18:09:37 ***
+0: slurmstepd: error: *** STEP 2328.0 ON gn03 CANCELLED AT 2024-12-04T18:09:37 ***

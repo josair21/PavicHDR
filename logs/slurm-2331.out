@@ -1,0 +1,243 @@
+ 
+:: initializing oneAPI environment ...
+   slurm_script: BASH_VERSION = 4.4.20(1)-release
+   args: Using "$@" for setvars.sh arguments: 
+:: advisor -- latest
+:: ccl -- latest
+:: clck -- latest
+:: compiler -- latest
+:: dal -- latest
+:: debugger -- latest
+:: dev-utilities -- latest
+:: dnnl -- latest
+:: dpcpp-ct -- latest
+:: dpl -- latest
+:: inspector -- latest
+:: ipp -- latest
+:: ippcp -- latest
+:: ipp -- latest
+:: itac -- latest
+:: mkl -- latest
+:: mpi -- latest
+:: tbb -- latest
+:: vtune -- latest
+:: oneAPI environment initialized ::
+ 
+job start time is Wed Dec 4 18:25:10 -05 2024
++ srun -N1 -n1 --cpu_bind=cores -l --nodelist=gn03 --cpus-per-task=96 singularity exec --nv -B /home/urso -B /scratch --pwd /home/urso/PavicHDR/logs /home/urso/.lico/container/Python.sif bash /home/urso/PavicHDR/train.sh
+0: ===> Start training 
+0: 
+0:         Dataset dir:     /home/urso/Datasets/Kalantari/
+0:         Subset:          sig17_training_crop128_stride64
+0:         Epochs:          100
+0:         Batch size:      32
+0:         Learning rate:   0.0002
+0:         Training size:   68376
+0:         Device:          cuda
+0:         
+0: Train Epoch: 0 [68352/68376 (100 %)]	Loss: 0.0185	Time: 244.797 	
+0: /home/urso/PavicHDR/train.py:230: DeprecationWarning: __array_wrap__ must accept context and return_scalar arguments (positionally) in the future. (Deprecated NumPy 2.0)
+0:   label = np.clip(label * 255.0, 0.0, 255.0).transpose(1, 2, 0)
+0: /home/urso/PavicHDR/train.py:232: DeprecationWarning: __array_wrap__ must accept context and return_scalar arguments (positionally) in the future. (Deprecated NumPy 2.0)
+0:   label_mu = np.clip(label_mu * 255.0, 0.0, 255.0).transpose(1, 2, 0)
+0: ==Validation==	PSNR_l: 37.2445	 PSNR_mu: 36.6238	 SSIM_l: 0.9787	 SSIM_mu: 0.9793
+0: Train Epoch: 1 [68352/68376 (100 %)]	Loss: 0.0124	Time: 243.933 	
+0: ==Validation==	PSNR_l: 37.6214	 PSNR_mu: 38.1972	 SSIM_l: 0.9819	 SSIM_mu: 0.9846
+0: Train Epoch: 2 [68352/68376 (100 %)]	Loss: 0.0098	Time: 244.265 	
+0: ==Validation==	PSNR_l: 37.4287	 PSNR_mu: 38.8959	 SSIM_l: 0.9833	 SSIM_mu: 0.9862
+0: Train Epoch: 3 [68352/68376 (100 %)]	Loss: 0.0100	Time: 240.232 	
+0: ==Validation==	PSNR_l: 34.1714	 PSNR_mu: 37.8398	 SSIM_l: 0.9766	 SSIM_mu: 0.9854
+0: Train Epoch: 4 [68352/68376 (100 %)]	Loss: 0.0079	Time: 242.244 	
+0: ==Validation==	PSNR_l: 37.2937	 PSNR_mu: 39.7541	 SSIM_l: 0.9824	 SSIM_mu: 0.9872
+0: Train Epoch: 5 [68352/68376 (100 %)]	Loss: 0.0078	Time: 243.498 	
+0: ==Validation==	PSNR_l: 35.7664	 PSNR_mu: 39.3025	 SSIM_l: 0.9797	 SSIM_mu: 0.9871
+0: Train Epoch: 6 [68352/68376 (100 %)]	Loss: 0.0081	Time: 242.952 	
+0: ==Validation==	PSNR_l: 34.9838	 PSNR_mu: 39.7706	 SSIM_l: 0.9802	 SSIM_mu: 0.9872
+0: Train Epoch: 7 [68352/68376 (100 %)]	Loss: 0.0090	Time: 246.267 	
+0: ==Validation==	PSNR_l: 37.8136	 PSNR_mu: 40.6635	 SSIM_l: 0.9827	 SSIM_mu: 0.9881
+0: Train Epoch: 8 [68352/68376 (100 %)]	Loss: 0.0068	Time: 248.886 	
+0: ==Validation==	PSNR_l: 37.0607	 PSNR_mu: 40.7501	 SSIM_l: 0.9839	 SSIM_mu: 0.9888
+0: Train Epoch: 9 [68352/68376 (100 %)]	Loss: 0.0084	Time: 243.296 	
+0: ==Validation==	PSNR_l: 35.7320	 PSNR_mu: 39.9817	 SSIM_l: 0.9804	 SSIM_mu: 0.9880
+0: Train Epoch: 10 [68352/68376 (100 %)]	Loss: 0.0079	Time: 242.125 	
+0: ==Validation==	PSNR_l: 35.9972	 PSNR_mu: 40.4872	 SSIM_l: 0.9813	 SSIM_mu: 0.9886
+0: Train Epoch: 11 [68352/68376 (100 %)]	Loss: 0.0070	Time: 240.978 	
+0: ==Validation==	PSNR_l: 36.4046	 PSNR_mu: 41.3019	 SSIM_l: 0.9834	 SSIM_mu: 0.9893
+0: Train Epoch: 12 [68352/68376 (100 %)]	Loss: 0.0079	Time: 243.674 	
+0: ==Validation==	PSNR_l: 37.6875	 PSNR_mu: 39.8821	 SSIM_l: 0.9841	 SSIM_mu: 0.9893
+0: Train Epoch: 13 [68352/68376 (100 %)]	Loss: 0.0083	Time: 244.147 	
+0: ==Validation==	PSNR_l: 36.8439	 PSNR_mu: 41.0245	 SSIM_l: 0.9831	 SSIM_mu: 0.9891
+0: Train Epoch: 14 [68352/68376 (100 %)]	Loss: 0.0072	Time: 248.466 	
+0: ==Validation==	PSNR_l: 37.9957	 PSNR_mu: 41.4958	 SSIM_l: 0.9844	 SSIM_mu: 0.9896
+0: Train Epoch: 15 [68352/68376 (100 %)]	Loss: 0.0077	Time: 254.789 	
+0: ==Validation==	PSNR_l: 36.7912	 PSNR_mu: 39.6215	 SSIM_l: 0.9826	 SSIM_mu: 0.9893
+0: Train Epoch: 16 [68352/68376 (100 %)]	Loss: 0.0082	Time: 255.318 	
+0: ==Validation==	PSNR_l: 36.4504	 PSNR_mu: 40.1512	 SSIM_l: 0.9823	 SSIM_mu: 0.9891
+0: Train Epoch: 17 [68352/68376 (100 %)]	Loss: 0.0063	Time: 246.078 	
+0: ==Validation==	PSNR_l: 37.4353	 PSNR_mu: 41.1537	 SSIM_l: 0.9833	 SSIM_mu: 0.9897
+0: Train Epoch: 18 [68352/68376 (100 %)]	Loss: 0.0059	Time: 246.458 	
+0: ==Validation==	PSNR_l: 38.1760	 PSNR_mu: 41.7814	 SSIM_l: 0.9843	 SSIM_mu: 0.9898
+0: Train Epoch: 19 [68352/68376 (100 %)]	Loss: 0.0080	Time: 249.676 	
+0: ==Validation==	PSNR_l: 37.7075	 PSNR_mu: 41.1239	 SSIM_l: 0.9848	 SSIM_mu: 0.9900
+0: Train Epoch: 20 [68352/68376 (100 %)]	Loss: 0.0070	Time: 243.743 	
+0: ==Validation==	PSNR_l: 38.5051	 PSNR_mu: 40.0459	 SSIM_l: 0.9853	 SSIM_mu: 0.9901
+0: Train Epoch: 21 [68352/68376 (100 %)]	Loss: 0.0058	Time: 246.551 	
+0: ==Validation==	PSNR_l: 37.7267	 PSNR_mu: 41.3615	 SSIM_l: 0.9844	 SSIM_mu: 0.9900
+0: Train Epoch: 22 [68352/68376 (100 %)]	Loss: 0.0067	Time: 252.060 	
+0: ==Validation==	PSNR_l: 38.1694	 PSNR_mu: 40.1362	 SSIM_l: 0.9844	 SSIM_mu: 0.9901
+0: Train Epoch: 23 [68352/68376 (100 %)]	Loss: 0.0086	Time: 242.614 	
+0: ==Validation==	PSNR_l: 37.9178	 PSNR_mu: 40.8174	 SSIM_l: 0.9834	 SSIM_mu: 0.9900
+0: Train Epoch: 24 [68352/68376 (100 %)]	Loss: 0.0058	Time: 244.521 	
+0: ==Validation==	PSNR_l: 38.0970	 PSNR_mu: 41.3301	 SSIM_l: 0.9844	 SSIM_mu: 0.9900
+0: Train Epoch: 25 [68352/68376 (100 %)]	Loss: 0.0060	Time: 242.431 	
+0: ==Validation==	PSNR_l: 39.5305	 PSNR_mu: 42.1974	 SSIM_l: 0.9857	 SSIM_mu: 0.9905
+0: Train Epoch: 26 [68352/68376 (100 %)]	Loss: 0.0085	Time: 244.084 	
+0: ==Validation==	PSNR_l: 38.1780	 PSNR_mu: 41.4168	 SSIM_l: 0.9845	 SSIM_mu: 0.9904
+0: Train Epoch: 27 [68352/68376 (100 %)]	Loss: 0.0068	Time: 242.092 	
+0: ==Validation==	PSNR_l: 39.6371	 PSNR_mu: 42.6317	 SSIM_l: 0.9857	 SSIM_mu: 0.9906
+0: Train Epoch: 28 [68352/68376 (100 %)]	Loss: 0.0074	Time: 247.675 	
+0: ==Validation==	PSNR_l: 39.3556	 PSNR_mu: 40.9767	 SSIM_l: 0.9852	 SSIM_mu: 0.9905
+0: Train Epoch: 29 [68352/68376 (100 %)]	Loss: 0.0091	Time: 246.718 	
+0: ==Validation==	PSNR_l: 38.5966	 PSNR_mu: 41.1471	 SSIM_l: 0.9848	 SSIM_mu: 0.9903
+0: Train Epoch: 30 [68352/68376 (100 %)]	Loss: 0.0072	Time: 243.152 	
+0: ==Validation==	PSNR_l: 38.8092	 PSNR_mu: 41.1280	 SSIM_l: 0.9851	 SSIM_mu: 0.9903
+0: Train Epoch: 31 [68352/68376 (100 %)]	Loss: 0.0073	Time: 248.616 	
+0: ==Validation==	PSNR_l: 39.3012	 PSNR_mu: 42.6791	 SSIM_l: 0.9855	 SSIM_mu: 0.9907
+0: Train Epoch: 32 [68352/68376 (100 %)]	Loss: 0.0055	Time: 243.500 	
+0: ==Validation==	PSNR_l: 39.8633	 PSNR_mu: 41.6762	 SSIM_l: 0.9864	 SSIM_mu: 0.9909
+0: Train Epoch: 33 [68352/68376 (100 %)]	Loss: 0.0076	Time: 243.744 	
+0: ==Validation==	PSNR_l: 40.2093	 PSNR_mu: 42.2122	 SSIM_l: 0.9855	 SSIM_mu: 0.9906
+0: Train Epoch: 34 [68352/68376 (100 %)]	Loss: 0.0074	Time: 241.680 	
+0: ==Validation==	PSNR_l: 38.9947	 PSNR_mu: 42.2280	 SSIM_l: 0.9847	 SSIM_mu: 0.9904
+0: Train Epoch: 35 [68352/68376 (100 %)]	Loss: 0.0070	Time: 244.556 	
+0: ==Validation==	PSNR_l: 39.5171	 PSNR_mu: 42.7077	 SSIM_l: 0.9855	 SSIM_mu: 0.9907
+0: Train Epoch: 36 [68352/68376 (100 %)]	Loss: 0.0063	Time: 240.177 	
+0: ==Validation==	PSNR_l: 40.0173	 PSNR_mu: 42.6124	 SSIM_l: 0.9856	 SSIM_mu: 0.9907
+0: Train Epoch: 37 [68352/68376 (100 %)]	Loss: 0.0058	Time: 240.367 	
+0: ==Validation==	PSNR_l: 40.6958	 PSNR_mu: 43.2094	 SSIM_l: 0.9855	 SSIM_mu: 0.9908
+0: Train Epoch: 38 [68352/68376 (100 %)]	Loss: 0.0067	Time: 242.876 	
+0: ==Validation==	PSNR_l: 40.6663	 PSNR_mu: 42.7926	 SSIM_l: 0.9851	 SSIM_mu: 0.9906
+0: Train Epoch: 39 [68352/68376 (100 %)]	Loss: 0.0063	Time: 242.032 	
+0: ==Validation==	PSNR_l: 39.8992	 PSNR_mu: 42.8728	 SSIM_l: 0.9855	 SSIM_mu: 0.9907
+0: Train Epoch: 40 [68352/68376 (100 %)]	Loss: 0.0075	Time: 246.055 	
+0: ==Validation==	PSNR_l: 38.8667	 PSNR_mu: 41.7065	 SSIM_l: 0.9853	 SSIM_mu: 0.9908
+0: Train Epoch: 41 [68352/68376 (100 %)]	Loss: 0.0055	Time: 245.298 	
+0: ==Validation==	PSNR_l: 40.6323	 PSNR_mu: 43.2947	 SSIM_l: 0.9861	 SSIM_mu: 0.9910
+0: Train Epoch: 42 [68352/68376 (100 %)]	Loss: 0.0078	Time: 247.750 	
+0: ==Validation==	PSNR_l: 38.9199	 PSNR_mu: 42.3636	 SSIM_l: 0.9851	 SSIM_mu: 0.9908
+0: Train Epoch: 43 [68352/68376 (100 %)]	Loss: 0.0056	Time: 242.292 	
+0: ==Validation==	PSNR_l: 40.6070	 PSNR_mu: 42.9159	 SSIM_l: 0.9855	 SSIM_mu: 0.9907
+0: Train Epoch: 44 [68352/68376 (100 %)]	Loss: 0.0060	Time: 244.646 	
+0: ==Validation==	PSNR_l: 39.9587	 PSNR_mu: 42.6265	 SSIM_l: 0.9854	 SSIM_mu: 0.9907
+0: Train Epoch: 45 [68352/68376 (100 %)]	Loss: 0.0079	Time: 242.488 	
+0: ==Validation==	PSNR_l: 39.6654	 PSNR_mu: 42.9258	 SSIM_l: 0.9850	 SSIM_mu: 0.9907
+0: Train Epoch: 46 [68352/68376 (100 %)]	Loss: 0.0067	Time: 243.393 	
+0: ==Validation==	PSNR_l: 39.7764	 PSNR_mu: 42.3837	 SSIM_l: 0.9845	 SSIM_mu: 0.9906
+0: Train Epoch: 47 [68352/68376 (100 %)]	Loss: 0.0067	Time: 242.375 	
+0: ==Validation==	PSNR_l: 38.8368	 PSNR_mu: 42.4063	 SSIM_l: 0.9856	 SSIM_mu: 0.9907
+0: Train Epoch: 48 [68352/68376 (100 %)]	Loss: 0.0052	Time: 246.376 	
+0: ==Validation==	PSNR_l: 38.7741	 PSNR_mu: 42.3776	 SSIM_l: 0.9854	 SSIM_mu: 0.9906
+0: Train Epoch: 49 [68352/68376 (100 %)]	Loss: 0.0062	Time: 246.574 	
+0: ==Validation==	PSNR_l: 39.8251	 PSNR_mu: 43.0768	 SSIM_l: 0.9862	 SSIM_mu: 0.9910
+0: Train Epoch: 50 [68352/68376 (100 %)]	Loss: 0.0050	Time: 244.871 	
+0: ==Validation==	PSNR_l: 39.7718	 PSNR_mu: 43.0119	 SSIM_l: 0.9857	 SSIM_mu: 0.9907
+0: Train Epoch: 51 [68352/68376 (100 %)]	Loss: 0.0071	Time: 250.237 	
+0: ==Validation==	PSNR_l: 40.0077	 PSNR_mu: 42.9936	 SSIM_l: 0.9856	 SSIM_mu: 0.9908
+0: Train Epoch: 52 [68352/68376 (100 %)]	Loss: 0.0051	Time: 241.003 	
+0: ==Validation==	PSNR_l: 39.5495	 PSNR_mu: 42.9890	 SSIM_l: 0.9855	 SSIM_mu: 0.9908
+0: Train Epoch: 53 [68352/68376 (100 %)]	Loss: 0.0046	Time: 240.976 	
+0: ==Validation==	PSNR_l: 39.8560	 PSNR_mu: 43.0672	 SSIM_l: 0.9855	 SSIM_mu: 0.9909
+0: Train Epoch: 54 [68352/68376 (100 %)]	Loss: 0.0065	Time: 245.150 	
+0: ==Validation==	PSNR_l: 39.5625	 PSNR_mu: 42.3640	 SSIM_l: 0.9828	 SSIM_mu: 0.9905
+0: Train Epoch: 55 [68352/68376 (100 %)]	Loss: 0.0060	Time: 239.433 	
+0: ==Validation==	PSNR_l: 40.1776	 PSNR_mu: 42.9052	 SSIM_l: 0.9858	 SSIM_mu: 0.9909
+0: Train Epoch: 56 [68352/68376 (100 %)]	Loss: 0.0048	Time: 239.516 	
+0: ==Validation==	PSNR_l: 39.8289	 PSNR_mu: 42.8448	 SSIM_l: 0.9848	 SSIM_mu: 0.9907
+0: Train Epoch: 57 [68352/68376 (100 %)]	Loss: 0.0051	Time: 239.211 	
+0: ==Validation==	PSNR_l: 40.0705	 PSNR_mu: 42.4057	 SSIM_l: 0.9851	 SSIM_mu: 0.9905
+0: Train Epoch: 58 [68352/68376 (100 %)]	Loss: 0.0065	Time: 241.087 	
+0: ==Validation==	PSNR_l: 40.1397	 PSNR_mu: 43.1305	 SSIM_l: 0.9854	 SSIM_mu: 0.9907
+0: Train Epoch: 59 [68352/68376 (100 %)]	Loss: 0.0063	Time: 241.434 	
+0: ==Validation==	PSNR_l: 39.5707	 PSNR_mu: 42.9578	 SSIM_l: 0.9858	 SSIM_mu: 0.9909
+0: Train Epoch: 60 [68352/68376 (100 %)]	Loss: 0.0051	Time: 243.738 	
+0: ==Validation==	PSNR_l: 40.0506	 PSNR_mu: 42.9376	 SSIM_l: 0.9850	 SSIM_mu: 0.9908
+0: Train Epoch: 61 [68352/68376 (100 %)]	Loss: 0.0061	Time: 241.834 	
+0: ==Validation==	PSNR_l: 39.4939	 PSNR_mu: 42.6130	 SSIM_l: 0.9845	 SSIM_mu: 0.9906
+0: Train Epoch: 62 [68352/68376 (100 %)]	Loss: 0.0053	Time: 248.549 	
+0: ==Validation==	PSNR_l: 40.1450	 PSNR_mu: 43.0291	 SSIM_l: 0.9855	 SSIM_mu: 0.9908
+0: Train Epoch: 63 [68352/68376 (100 %)]	Loss: 0.0053	Time: 248.932 	
+0: ==Validation==	PSNR_l: 39.8575	 PSNR_mu: 42.8540	 SSIM_l: 0.9852	 SSIM_mu: 0.9907
+0: Train Epoch: 64 [68352/68376 (100 %)]	Loss: 0.0057	Time: 255.710 	
+0: ==Validation==	PSNR_l: 40.6025	 PSNR_mu: 43.3393	 SSIM_l: 0.9873	 SSIM_mu: 0.9912
+0: Train Epoch: 65 [68352/68376 (100 %)]	Loss: 0.0046	Time: 242.389 	
+0: ==Validation==	PSNR_l: 40.4433	 PSNR_mu: 43.2989	 SSIM_l: 0.9858	 SSIM_mu: 0.9909
+0: Train Epoch: 66 [68352/68376 (100 %)]	Loss: 0.0054	Time: 243.311 	
+0: ==Validation==	PSNR_l: 40.0314	 PSNR_mu: 42.8899	 SSIM_l: 0.9849	 SSIM_mu: 0.9906
+0: Train Epoch: 67 [68352/68376 (100 %)]	Loss: 0.0064	Time: 239.003 	
+0: ==Validation==	PSNR_l: 39.7153	 PSNR_mu: 42.7286	 SSIM_l: 0.9856	 SSIM_mu: 0.9907
+0: Train Epoch: 68 [68352/68376 (100 %)]	Loss: 0.0050	Time: 246.227 	
+0: ==Validation==	PSNR_l: 39.9454	 PSNR_mu: 43.2520	 SSIM_l: 0.9868	 SSIM_mu: 0.9910
+0: Train Epoch: 69 [68352/68376 (100 %)]	Loss: 0.0070	Time: 249.058 	
+0: ==Validation==	PSNR_l: 39.7492	 PSNR_mu: 42.6243	 SSIM_l: 0.9845	 SSIM_mu: 0.9906
+0: Train Epoch: 70 [68352/68376 (100 %)]	Loss: 0.0048	Time: 250.099 	
+0: ==Validation==	PSNR_l: 39.7696	 PSNR_mu: 42.5535	 SSIM_l: 0.9841	 SSIM_mu: 0.9906
+0: Train Epoch: 71 [68352/68376 (100 %)]	Loss: 0.0052	Time: 247.424 	
+0: ==Validation==	PSNR_l: 40.5233	 PSNR_mu: 42.7788	 SSIM_l: 0.9851	 SSIM_mu: 0.9907
+0: Train Epoch: 72 [68352/68376 (100 %)]	Loss: 0.0042	Time: 240.113 	
+0: ==Validation==	PSNR_l: 40.3688	 PSNR_mu: 43.0099	 SSIM_l: 0.9856	 SSIM_mu: 0.9909
+0: Train Epoch: 73 [68352/68376 (100 %)]	Loss: 0.0058	Time: 241.436 	
+0: ==Validation==	PSNR_l: 40.7824	 PSNR_mu: 43.5311	 SSIM_l: 0.9875	 SSIM_mu: 0.9912
+0: Train Epoch: 74 [68352/68376 (100 %)]	Loss: 0.0045	Time: 243.253 	
+0: ==Validation==	PSNR_l: 39.3952	 PSNR_mu: 43.0050	 SSIM_l: 0.9855	 SSIM_mu: 0.9907
+0: Train Epoch: 75 [68352/68376 (100 %)]	Loss: 0.0062	Time: 246.782 	
+0: ==Validation==	PSNR_l: 40.7785	 PSNR_mu: 43.2029	 SSIM_l: 0.9856	 SSIM_mu: 0.9909
+0: Train Epoch: 76 [68352/68376 (100 %)]	Loss: 0.0049	Time: 241.306 	
+0: ==Validation==	PSNR_l: 39.4863	 PSNR_mu: 42.5867	 SSIM_l: 0.9848	 SSIM_mu: 0.9907
+0: Train Epoch: 77 [68352/68376 (100 %)]	Loss: 0.0070	Time: 242.301 	
+0: ==Validation==	PSNR_l: 40.7433	 PSNR_mu: 43.3989	 SSIM_l: 0.9870	 SSIM_mu: 0.9910
+0: Train Epoch: 78 [68352/68376 (100 %)]	Loss: 0.0059	Time: 242.046 	
+0: ==Validation==	PSNR_l: 40.5837	 PSNR_mu: 43.3367	 SSIM_l: 0.9870	 SSIM_mu: 0.9909
+0: Train Epoch: 79 [68352/68376 (100 %)]	Loss: 0.0061	Time: 241.227 	
+0: ==Validation==	PSNR_l: 40.2965	 PSNR_mu: 43.1026	 SSIM_l: 0.9854	 SSIM_mu: 0.9909
+0: Train Epoch: 80 [68352/68376 (100 %)]	Loss: 0.0077	Time: 242.331 	
+0: ==Validation==	PSNR_l: 40.3014	 PSNR_mu: 43.4555	 SSIM_l: 0.9873	 SSIM_mu: 0.9912
+0: Train Epoch: 81 [68352/68376 (100 %)]	Loss: 0.0050	Time: 239.313 	
+0: ==Validation==	PSNR_l: 40.0030	 PSNR_mu: 42.7759	 SSIM_l: 0.9844	 SSIM_mu: 0.9907
+0: Train Epoch: 82 [68352/68376 (100 %)]	Loss: 0.0062	Time: 239.953 	
+0: ==Validation==	PSNR_l: 40.3202	 PSNR_mu: 43.2189	 SSIM_l: 0.9853	 SSIM_mu: 0.9907
+0: Train Epoch: 83 [68352/68376 (100 %)]	Loss: 0.0052	Time: 248.760 	
+0: ==Validation==	PSNR_l: 39.8256	 PSNR_mu: 43.2560	 SSIM_l: 0.9870	 SSIM_mu: 0.9910
+0: Train Epoch: 84 [68352/68376 (100 %)]	Loss: 0.0054	Time: 246.313 	
+0: ==Validation==	PSNR_l: 40.3956	 PSNR_mu: 43.3497	 SSIM_l: 0.9859	 SSIM_mu: 0.9909
+0: Train Epoch: 85 [68352/68376 (100 %)]	Loss: 0.0059	Time: 247.532 	
+0: ==Validation==	PSNR_l: 40.1318	 PSNR_mu: 43.2716	 SSIM_l: 0.9860	 SSIM_mu: 0.9910
+0: Train Epoch: 86 [68352/68376 (100 %)]	Loss: 0.0067	Time: 245.615 	
+0: ==Validation==	PSNR_l: 39.7328	 PSNR_mu: 43.0454	 SSIM_l: 0.9857	 SSIM_mu: 0.9909
+0: Train Epoch: 87 [68352/68376 (100 %)]	Loss: 0.0066	Time: 245.613 	
+0: ==Validation==	PSNR_l: 39.5873	 PSNR_mu: 42.8862	 SSIM_l: 0.9856	 SSIM_mu: 0.9908
+0: Train Epoch: 88 [68352/68376 (100 %)]	Loss: 0.0040	Time: 243.533 	
+0: ==Validation==	PSNR_l: 40.4104	 PSNR_mu: 43.2951	 SSIM_l: 0.9868	 SSIM_mu: 0.9911
+0: Train Epoch: 89 [68352/68376 (100 %)]	Loss: 0.0051	Time: 240.159 	
+0: ==Validation==	PSNR_l: 40.3162	 PSNR_mu: 43.3174	 SSIM_l: 0.9864	 SSIM_mu: 0.9911
+0: Train Epoch: 90 [68352/68376 (100 %)]	Loss: 0.0053	Time: 240.336 	
+0: ==Validation==	PSNR_l: 39.8050	 PSNR_mu: 43.0296	 SSIM_l: 0.9860	 SSIM_mu: 0.9908
+0: Train Epoch: 91 [68352/68376 (100 %)]	Loss: 0.0045	Time: 239.484 	
+0: ==Validation==	PSNR_l: 40.4157	 PSNR_mu: 43.1933	 SSIM_l: 0.9858	 SSIM_mu: 0.9908
+0: Train Epoch: 92 [68352/68376 (100 %)]	Loss: 0.0059	Time: 241.259 	
+0: ==Validation==	PSNR_l: 40.0451	 PSNR_mu: 43.1094	 SSIM_l: 0.9855	 SSIM_mu: 0.9908
+0: Train Epoch: 93 [68352/68376 (100 %)]	Loss: 0.0049	Time: 243.207 	
+0: ==Validation==	PSNR_l: 40.1581	 PSNR_mu: 43.0778	 SSIM_l: 0.9852	 SSIM_mu: 0.9906
+0: Train Epoch: 94 [68352/68376 (100 %)]	Loss: 0.0056	Time: 245.493 	
+0: ==Validation==	PSNR_l: 39.3913	 PSNR_mu: 42.8576	 SSIM_l: 0.9857	 SSIM_mu: 0.9909
+0: Train Epoch: 95 [68352/68376 (100 %)]	Loss: 0.0057	Time: 240.616 	
+0: ==Validation==	PSNR_l: 40.6120	 PSNR_mu: 43.3121	 SSIM_l: 0.9861	 SSIM_mu: 0.9909
+0: Train Epoch: 96 [68352/68376 (100 %)]	Loss: 0.0079	Time: 242.827 	
+0: ==Validation==	PSNR_l: 39.6571	 PSNR_mu: 42.9064	 SSIM_l: 0.9851	 SSIM_mu: 0.9907
+0: Train Epoch: 97 [68352/68376 (100 %)]	Loss: 0.0059	Time: 240.743 	
+0: ==Validation==	PSNR_l: 40.1597	 PSNR_mu: 43.1098	 SSIM_l: 0.9868	 SSIM_mu: 0.9911
+0: Train Epoch: 98 [68352/68376 (100 %)]	Loss: 0.0040	Time: 240.363 	
+0: ==Validation==	PSNR_l: 40.4979	 PSNR_mu: 43.4375	 SSIM_l: 0.9871	 SSIM_mu: 0.9911
+0: Train Epoch: 99 [68352/68376 (100 %)]	Loss: 0.0072	Time: 243.378 	
+0: ==Validation==	PSNR_l: 40.5220	 PSNR_mu: 43.4004	 SSIM_l: 0.9872	 SSIM_mu: 0.9910
++ set +x
+job end time is Thu Dec 5 03:44:20 -05 2024

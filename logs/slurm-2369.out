@@ -1,0 +1,70 @@
+ 
+:: initializing oneAPI environment ...
+   slurm_script: BASH_VERSION = 4.4.20(1)-release
+   args: Using "$@" for setvars.sh arguments: 
+:: advisor -- latest
+:: ccl -- latest
+:: clck -- latest
+:: compiler -- latest
+:: dal -- latest
+:: debugger -- latest
+:: dev-utilities -- latest
+:: dnnl -- latest
+:: dpcpp-ct -- latest
+:: dpl -- latest
+:: inspector -- latest
+:: ipp -- latest
+:: ippcp -- latest
+:: ipp -- latest
+:: itac -- latest
+:: mkl -- latest
+:: mpi -- latest
+:: tbb -- latest
+:: vtune -- latest
+:: oneAPI environment initialized ::
+ 
+job start time is Thu Dec 5 10:52:09 -05 2024
++ srun -N1 -n1 --cpu_bind=cores -l --nodelist=gn03 --cpus-per-task=96 singularity exec --nv -B /home/urso -B /scratch --pwd /home/urso/PavicHDR/logs /home/urso/.lico/container/Python.sif bash /home/urso/PavicHDR/test.sh
+0: /home/urso/PavicHDR/test.py:48: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+0:   model.load_state_dict(torch.load(f"{args.ckpt}")['state_dict'])
+0: >>>>>>>>> Start Testing >>>>>>>>>
+0: Load weights from:  /home/urso/PavicHDR/runs/train_2/best_checkpoint.pth
+0: 2000
+0: cuda:0
+0: 236.7668
+0: [[[0.0875473  0.09532928 0.10116577 ... 0.15758514 0.15174866 0.14396667]
+0:   [0.09143829 0.09338379 0.09727478 ... 0.15563965 0.15174866 0.1342392 ]
+0:   [0.09435654 0.08852005 0.09338379 ... 0.15563965 0.15369415 0.14202118]
+0:   ...
+0:   [0.32100677 0.32295227 0.33851624 ... 0.34046173 0.32100677 0.32489777]
+0:   [0.28598785 0.2704239  0.29766083 ... 0.32684326 0.3093338  0.32878876]
+0:   [0.28793335 0.27820587 0.29571533 ... 0.32295227 0.3132248  0.32489777]]
+0: 
+0:  [[0.13132095 0.12937546 0.13326645 ... 0.24707794 0.24124146 0.22956848]
+0:   [0.13132095 0.1342392  0.14007568 ... 0.23540497 0.22762299 0.20233154]
+0:   [0.1303482  0.13618469 0.1322937  ... 0.23540497 0.23540497 0.21595001]
+0:   ...
+0:   [0.27431488 0.2665329  0.27626038 ... 0.41828156 0.4027176  0.4046631 ]
+0:   [0.24513245 0.219841   0.24513245 ... 0.4046631  0.39104462 0.4046631 ]
+0:   [0.24124146 0.23345947 0.23929596 ... 0.41633606 0.4027176  0.4046631 ]]
+0: 
+0:  [[0.1789856  0.1789856  0.18287659 ... 0.33462524 0.33073425 0.29376984]
+0:   [0.17314911 0.18190384 0.18384933 ... 0.3151703  0.3034973  0.25680542]
+0:   [0.17314911 0.17801285 0.17995834 ... 0.3054428  0.3151703  0.28598785]
+0:   ...
+0:   [0.23735046 0.22956848 0.2606964  ... 0.4844284  0.47080994 0.4824829 ]
+0:   [0.21205902 0.19260406 0.20233154 ... 0.47859192 0.45524597 0.45524597]
+0:   [0.19649506 0.19844055 0.20233154 ... 0.4824829  0.46302795 0.46497345]]]
+0:  0 | PSNR_mu: 50.99535791017851  PSNR_l: 54.84489580698102 | SSIM_mu: None  SSIM_l: None Seconds: 1.0932564735412598  GPU: 25.29
+0: Traceback (most recent call last):
+0:   File "/home/urso/PavicHDR/test.py", line 138, in <module>
+0:     main()
+0:   File "/home/urso/PavicHDR/test.py", line 108, in main
+0:     ssim_l.update(scene_ssim_l)
+0:   File "/home/urso/PavicHDR/utils/utils.py", line 116, in update
+0:     self.sum += val * n
+0:                 ~~~~^~~
+0: TypeError: unsupported operand type(s) for *: 'NoneType' and 'int'
+srun: error: gn03: task 0: Exited with exit code 1
++ set +x
+job end time is Thu Dec 5 10:52:32 -05 2024

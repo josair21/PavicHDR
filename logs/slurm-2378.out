@@ -1,0 +1,85 @@
+ 
+:: initializing oneAPI environment ...
+   slurm_script: BASH_VERSION = 4.4.20(1)-release
+   args: Using "$@" for setvars.sh arguments: 
+:: advisor -- latest
+:: ccl -- latest
+:: clck -- latest
+:: compiler -- latest
+:: dal -- latest
+:: debugger -- latest
+:: dev-utilities -- latest
+:: dnnl -- latest
+:: dpcpp-ct -- latest
+:: dpl -- latest
+:: inspector -- latest
+:: ipp -- latest
+:: ippcp -- latest
+:: ipp -- latest
+:: itac -- latest
+:: mkl -- latest
+:: mpi -- latest
+:: tbb -- latest
+:: vtune -- latest
+:: oneAPI environment initialized ::
+ 
+job start time is Thu Dec 5 13:44:26 -05 2024
++ srun -N1 -n1 --cpu_bind=cores -l --nodelist=gn03 --cpus-per-task=96 singularity exec --nv -B /home/urso -B /scratch --pwd /home/urso/PavicHDR/logs /home/urso/.lico/container/Python.sif bash /home/urso/PavicHDR/train.sh
+0: ===> Start training 
+0: 
+0:         Dataset dir:     /home/urso/Datasets/Kalantari/
+0:         Subset:          sig17_training_crop128_stride64
+0:         Epochs:          100
+0:         Batch size:      32
+0:         Learning rate:   0.0002
+0:         Training size:   68376
+0:         Device:          cuda
+0:         
+0: Train Epoch: 0 [68352/68376 (100 %)]	Loss: 0.0141	Time: 663.636 	
+0: /home/urso/PavicHDR/train.py:230: DeprecationWarning: __array_wrap__ must accept context and return_scalar arguments (positionally) in the future. (Deprecated NumPy 2.0)
+0:   label = np.clip(label * 255.0, 0.0, 255.0).transpose(1, 2, 0)
+0: /home/urso/PavicHDR/train.py:232: DeprecationWarning: __array_wrap__ must accept context and return_scalar arguments (positionally) in the future. (Deprecated NumPy 2.0)
+0:   label_mu = np.clip(label_mu * 255.0, 0.0, 255.0).transpose(1, 2, 0)
+0: ==Validation==	PSNR_l: 38.0902	 PSNR_mu: 37.5082	 SSIM_l: 0.9824	 SSIM_mu: 0.9845
+0: Train Epoch: 1 [68352/68376 (100 %)]	Loss: 0.0111	Time: 660.040 	
+0: ==Validation==	PSNR_l: 39.2257	 PSNR_mu: 39.6077	 SSIM_l: 0.9831	 SSIM_mu: 0.9868
+0: Train Epoch: 2 [68352/68376 (100 %)]	Loss: 0.0084	Time: 662.803 	
+0: ==Validation==	PSNR_l: 39.9008	 PSNR_mu: 40.5812	 SSIM_l: 0.9858	 SSIM_mu: 0.9880
+0: Train Epoch: 3 [68352/68376 (100 %)]	Loss: 0.0114	Time: 660.748 	
+0: ==Validation==	PSNR_l: 39.5201	 PSNR_mu: 40.1605	 SSIM_l: 0.9850	 SSIM_mu: 0.9883
+0: Train Epoch: 4 [68352/68376 (100 %)]	Loss: 0.0109	Time: 660.922 	
+0: ==Validation==	PSNR_l: 40.1096	 PSNR_mu: 39.8344	 SSIM_l: 0.9860	 SSIM_mu: 0.9881
+0: Train Epoch: 5 [68352/68376 (100 %)]	Loss: 0.0090	Time: 662.048 	
+0: ==Validation==	PSNR_l: 40.4059	 PSNR_mu: 40.8301	 SSIM_l: 0.9857	 SSIM_mu: 0.9888
+0: Train Epoch: 6 [68352/68376 (100 %)]	Loss: 0.0087	Time: 662.207 	
+0: ==Validation==	PSNR_l: 40.7138	 PSNR_mu: 41.2360	 SSIM_l: 0.9865	 SSIM_mu: 0.9895
+0: Train Epoch: 7 [68352/68376 (100 %)]	Loss: 0.0083	Time: 662.004 	
+0: ==Validation==	PSNR_l: 40.5389	 PSNR_mu: 41.3382	 SSIM_l: 0.9860	 SSIM_mu: 0.9897
+0: Train Epoch: 8 [68352/68376 (100 %)]	Loss: 0.0055	Time: 661.430 	
+0: ==Validation==	PSNR_l: 40.8289	 PSNR_mu: 41.8437	 SSIM_l: 0.9866	 SSIM_mu: 0.9898
+0: Train Epoch: 9 [68352/68376 (100 %)]	Loss: 0.0068	Time: 661.684 	
+0: ==Validation==	PSNR_l: 40.5196	 PSNR_mu: 42.3953	 SSIM_l: 0.9871	 SSIM_mu: 0.9901
+0: Train Epoch: 10 [68352/68376 (100 %)]	Loss: 0.0065	Time: 661.859 	
+0: ==Validation==	PSNR_l: 41.5128	 PSNR_mu: 42.5509	 SSIM_l: 0.9880	 SSIM_mu: 0.9904
+0: Train Epoch: 11 [68352/68376 (100 %)]	Loss: 0.0086	Time: 662.717 	
+0: ==Validation==	PSNR_l: 41.1553	 PSNR_mu: 42.3103	 SSIM_l: 0.9872	 SSIM_mu: 0.9906
+0: Train Epoch: 12 [68352/68376 (100 %)]	Loss: 0.0078	Time: 660.312 	
+0: ==Validation==	PSNR_l: 41.1552	 PSNR_mu: 41.8371	 SSIM_l: 0.9867	 SSIM_mu: 0.9903
+0: Train Epoch: 13 [68352/68376 (100 %)]	Loss: 0.0096	Time: 660.940 	
+0: ==Validation==	PSNR_l: 41.0567	 PSNR_mu: 41.6683	 SSIM_l: 0.9874	 SSIM_mu: 0.9902
+0: Train Epoch: 14 [68352/68376 (100 %)]	Loss: 0.0071	Time: 662.099 	
+0: ==Validation==	PSNR_l: 41.0606	 PSNR_mu: 41.7588	 SSIM_l: 0.9875	 SSIM_mu: 0.9904
+0: Train Epoch: 15 [68352/68376 (100 %)]	Loss: 0.0086	Time: 659.629 	
+0: ==Validation==	PSNR_l: 40.8092	 PSNR_mu: 42.6408	 SSIM_l: 0.9878	 SSIM_mu: 0.9907
+0: Train Epoch: 16 [68352/68376 (100 %)]	Loss: 0.0060	Time: 661.107 	
+0: ==Validation==	PSNR_l: 41.3514	 PSNR_mu: 43.0416	 SSIM_l: 0.9882	 SSIM_mu: 0.9909
+0: Train Epoch: 17 [68352/68376 (100 %)]	Loss: 0.0081	Time: 661.480 	
+0: ==Validation==	PSNR_l: 41.2951	 PSNR_mu: 42.4087	 SSIM_l: 0.9873	 SSIM_mu: 0.9906
+0: Train Epoch: 18 [68352/68376 (100 %)]	Loss: 0.0059	Time: 661.199 	
+0: ==Validation==	PSNR_l: 41.4660	 PSNR_mu: 42.7069	 SSIM_l: 0.9879	 SSIM_mu: 0.9911
+0: Train Epoch: 19 [68352/68376 (100 %)]	Loss: 0.0056	Time: 661.870 	
+0: ==Validation==	PSNR_l: 41.2656	 PSNR_mu: 42.6293	 SSIM_l: 0.9875	 SSIM_mu: 0.9907
+0: Train Epoch: 20 [68352/68376 (100 %)]	Loss: 0.0061	Time: 659.652 	
+0: ==Validation==	PSNR_l: 41.5267	 PSNR_mu: 42.9592	 SSIM_l: 0.9876	 SSIM_mu: 0.9911
+0: Train Epoch: 21 [68352/68376 (100 %)]	Loss: 0.0073	Time: 662.540 	
+0: ==Validation==	PSNR_l: 41.4329	 PSNR_mu: 42.1675	 SSIM_l: 0.9867	 SSIM_mu: 0.9907

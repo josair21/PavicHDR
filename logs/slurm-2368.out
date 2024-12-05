@@ -1,0 +1,92 @@
+ 
+:: initializing oneAPI environment ...
+   slurm_script: BASH_VERSION = 4.4.20(1)-release
+   args: Using "$@" for setvars.sh arguments: 
+:: advisor -- latest
+:: ccl -- latest
+:: clck -- latest
+:: compiler -- latest
+:: dal -- latest
+:: debugger -- latest
+:: dev-utilities -- latest
+:: dnnl -- latest
+:: dpcpp-ct -- latest
+:: dpl -- latest
+:: inspector -- latest
+:: ipp -- latest
+:: ippcp -- latest
+:: ipp -- latest
+:: itac -- latest
+:: mkl -- latest
+:: mpi -- latest
+:: tbb -- latest
+:: vtune -- latest
+:: oneAPI environment initialized ::
+ 
+job start time is Thu Dec 5 10:50:40 -05 2024
++ srun -N1 -n1 --cpu_bind=cores -l --nodelist=gn03 --cpus-per-task=96 singularity exec --nv -B /home/urso -B /scratch --pwd /home/urso/PavicHDR/logs /home/urso/.lico/container/Python.sif bash /home/urso/PavicHDR/test.sh
+0: /home/urso/PavicHDR/test.py:48: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+0:   model.load_state_dict(torch.load(f"{args.ckpt}")['state_dict'])
+0: >>>>>>>>> Start Testing >>>>>>>>>
+0: Load weights from:  /home/urso/PavicHDR/runs/train_2/best_checkpoint.pth
+0: 2000
+0: cuda:0
+0: [[[0.10426105 0.092227   0.10476193 ... 0.16443639 0.16000469 0.14878622]
+0:   [0.10248449 0.10116881 0.10411907 ... 0.15932919 0.1444107  0.13673413]
+0:   [0.1039749  0.10214502 0.09964787 ... 0.16024077 0.15727071 0.14252278]
+0:   ...
+0:   [0.31849366 0.31351447 0.34338012 ... 0.3394003  0.31694984 0.33268452]
+0:   [0.29537264 0.2807943  0.30105147 ... 0.32691547 0.3167801  0.34396058]
+0:   [0.26222664 0.26525393 0.2876026  ... 0.32637396 0.3153696  0.32618442]]
+0: 
+0:  [[0.14506641 0.13363035 0.14444575 ... 0.2538452  0.24945192 0.22668187]
+0:   [0.14463179 0.14225069 0.14891575 ... 0.2395825  0.22205865 0.19529817]
+0:   [0.14847456 0.146649   0.14337796 ... 0.24279766 0.2339488  0.20769833]
+0:   ...
+0:   [0.26965174 0.26788983 0.2851588  ... 0.41834983 0.39601728 0.40620443]
+0:   [0.2510531  0.22807579 0.24617215 ... 0.4057437  0.39118016 0.40956458]
+0:   [0.24094832 0.21605636 0.22732383 ... 0.41548878 0.39718285 0.3901464 ]]
+0: 
+0:  [[0.19948679 0.1857725  0.20196262 ... 0.33694556 0.33212256 0.3137285 ]
+0:   [0.20178872 0.20371078 0.20253648 ... 0.3232586  0.30071586 0.26099655]
+0:   [0.19249262 0.19769287 0.19510807 ... 0.3067514  0.31284732 0.27433866]
+0:   ...
+0:   [0.23307109 0.23350364 0.2575489  ... 0.4951376  0.46429425 0.48458076]
+0:   [0.22309883 0.20367828 0.20447452 ... 0.4764649  0.4498492  0.47820967]
+0:   [0.21413307 0.18964766 0.19643515 ... 0.48312148 0.4549438  0.46239585]]]
+0: [[[0.0875473  0.09532928 0.10116577 ... 0.15758514 0.15174866 0.14396667]
+0:   [0.09143829 0.09338379 0.09727478 ... 0.15563965 0.15174866 0.1342392 ]
+0:   [0.09435654 0.08852005 0.09338379 ... 0.15563965 0.15369415 0.14202118]
+0:   ...
+0:   [0.32100677 0.32295227 0.33851624 ... 0.34046173 0.32100677 0.32489777]
+0:   [0.28598785 0.2704239  0.29766083 ... 0.32684326 0.3093338  0.32878876]
+0:   [0.28793335 0.27820587 0.29571533 ... 0.32295227 0.3132248  0.32489777]]
+0: 
+0:  [[0.13132095 0.12937546 0.13326645 ... 0.24707794 0.24124146 0.22956848]
+0:   [0.13132095 0.1342392  0.14007568 ... 0.23540497 0.22762299 0.20233154]
+0:   [0.1303482  0.13618469 0.1322937  ... 0.23540497 0.23540497 0.21595001]
+0:   ...
+0:   [0.27431488 0.2665329  0.27626038 ... 0.41828156 0.4027176  0.4046631 ]
+0:   [0.24513245 0.219841   0.24513245 ... 0.4046631  0.39104462 0.4046631 ]
+0:   [0.24124146 0.23345947 0.23929596 ... 0.41633606 0.4027176  0.4046631 ]]
+0: 
+0:  [[0.1789856  0.1789856  0.18287659 ... 0.33462524 0.33073425 0.29376984]
+0:   [0.17314911 0.18190384 0.18384933 ... 0.3151703  0.3034973  0.25680542]
+0:   [0.17314911 0.17801285 0.17995834 ... 0.3054428  0.3151703  0.28598785]
+0:   ...
+0:   [0.23735046 0.22956848 0.2606964  ... 0.4844284  0.47080994 0.4824829 ]
+0:   [0.21205902 0.19260406 0.20233154 ... 0.47859192 0.45524597 0.45524597]
+0:   [0.19649506 0.19844055 0.20233154 ... 0.4824829  0.46302795 0.46497345]]]
+0:  0 | PSNR_mu: 50.99535791017851  PSNR_l: 54.84489580698102 | SSIM_mu: None  SSIM_l: None Seconds: 1.131592035293579  GPU: 25.29
+0: Traceback (most recent call last):
+0:   File "/home/urso/PavicHDR/test.py", line 138, in <module>
+0:     main()
+0:   File "/home/urso/PavicHDR/test.py", line 108, in main
+0:     ssim_l.update(scene_ssim_l)
+0:   File "/home/urso/PavicHDR/utils/utils.py", line 116, in update
+0:     self.sum += val * n
+0:                 ~~~~^~~
+0: TypeError: unsupported operand type(s) for *: 'NoneType' and 'int'
+srun: error: gn03: task 0: Exited with exit code 1
++ set +x
+job end time is Thu Dec 5 10:51:04 -05 2024

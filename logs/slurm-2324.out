@@ -1,0 +1,52 @@
+ 
+:: initializing oneAPI environment ...
+   slurm_script: BASH_VERSION = 4.4.20(1)-release
+   args: Using "$@" for setvars.sh arguments: 
+:: advisor -- latest
+:: ccl -- latest
+:: clck -- latest
+:: compiler -- latest
+:: dal -- latest
+:: debugger -- latest
+:: dev-utilities -- latest
+:: dnnl -- latest
+:: dpcpp-ct -- latest
+:: dpl -- latest
+:: inspector -- latest
+:: ipp -- latest
+:: ippcp -- latest
+:: ipp -- latest
+:: itac -- latest
+:: mkl -- latest
+:: mpi -- latest
+:: tbb -- latest
+:: vtune -- latest
+:: oneAPI environment initialized ::
+ 
+job start time is Wed Dec 4 17:26:41 -05 2024
++ srun -N1 -n1 --cpu_bind=cores -l --nodelist=gn03 --cpus-per-task=96 singularity exec --nv -B /home/urso -B /scratch --pwd /home/urso/PavicHDR/logs /home/urso/.lico/container/Python.sif bash /home/urso/PavicHDR/train.sh
+0: ===> Start training 
+0: 
+0:         Dataset dir:     /home/urso/Datasets/Kalantari/
+0:         Subset:          sig17_training_crop128_stride64
+0:         Epochs:          100
+0:         Batch size:      32
+0:         Learning rate:   0.0002
+0:         Training size:   68376
+0:         Device:          cuda
+0:         
+0: Train Epoch: 0 [68352/68376 (100 %)]	Loss: nan	Time: 0.169 (0.117808)	Data: 0.000 (0.001037)
+0: /home/urso/PavicHDR/utils/utils.py:43: RuntimeWarning: invalid value encountered in log
+0:   return (np.log(1 + 5000 * x)) / np.log(1 + 5000)
+0: /home/urso/PavicHDR/train.py:228: DeprecationWarning: __array_wrap__ must accept context and return_scalar arguments (positionally) in the future. (Deprecated NumPy 2.0)
+0:   label = np.clip(label * 255.0, 0.0, 255.0).transpose(1, 2, 0)
+0: /home/urso/PavicHDR/train.py:230: DeprecationWarning: __array_wrap__ must accept context and return_scalar arguments (positionally) in the future. (Deprecated NumPy 2.0)
+0:   label_mu = np.clip(label_mu * 255.0, 0.0, 255.0).transpose(1, 2, 0)
+0: ==Validation==	PSNR_l: 31.1641	 PSNR_mu: nan	 SSIM_l: 0.9195	 SSIM_mu: nan
+0: Train Epoch: 1 [68352/68376 (100 %)]	Loss: nan	Time: 0.108 (0.115140)	Data: 0.000 (0.000870)
+0: ==Validation==	PSNR_l: 33.8562	 PSNR_mu: nan	 SSIM_l: 0.9755	 SSIM_mu: nan
+0: Train Epoch: 2 [68352/68376 (100 %)]	Loss: nan	Time: 0.111 (0.111869)	Data: 0.000 (0.000834)
+0: ==Validation==	PSNR_l: 29.6677	 PSNR_mu: nan	 SSIM_l: 0.9015	 SSIM_mu: nan
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** JOB 2324 ON gn03 CANCELLED AT 2024-12-04T17:47:37 ***
+0: slurmstepd: error: *** STEP 2324.0 ON gn03 CANCELLED AT 2024-12-04T17:47:37 ***

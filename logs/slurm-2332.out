@@ -1,0 +1,38 @@
+ 
+:: initializing oneAPI environment ...
+   slurm_script: BASH_VERSION = 4.4.20(1)-release
+   args: Using "$@" for setvars.sh arguments: 
+:: advisor -- latest
+:: ccl -- latest
+:: clck -- latest
+:: compiler -- latest
+:: dal -- latest
+:: debugger -- latest
+:: dev-utilities -- latest
+:: dnnl -- latest
+:: dpcpp-ct -- latest
+:: dpl -- latest
+:: inspector -- latest
+:: ipp -- latest
+:: ippcp -- latest
+:: ipp -- latest
+:: itac -- latest
+:: mkl -- latest
+:: mpi -- latest
+:: tbb -- latest
+:: vtune -- latest
+:: oneAPI environment initialized ::
+ 
+job start time is Thu Dec 5 08:24:00 -05 2024
++ srun -N1 -n1 --cpu_bind=cores -l --nodelist=gn03 --cpus-per-task=96 singularity exec --nv -B /home/urso -B /scratch --pwd /home/urso/PavicHDR/logs /home/urso/.lico/container/Python.sif bash /home/urso/PavicHDR/test.sh
+0: >>>>>>>>> Start Testing >>>>>>>>>
+0: Traceback (most recent call last):
+0:   File "/home/urso/PavicHDR/test.py", line 110, in <module>
+0:     main()
+0:   File "/home/urso/PavicHDR/test.py", line 38, in main
+0:     print("Load weights from: ", args.pretrained_path)
+0:                                  ^^^^^^^^^^^^^^^^^^^^
+0: AttributeError: 'Namespace' object has no attribute 'pretrained_path'
+srun: error: gn03: task 0: Exited with exit code 1
++ set +x
+job end time is Thu Dec 5 08:24:19 -05 2024

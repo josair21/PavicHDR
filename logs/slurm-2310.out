@@ -1,0 +1,128 @@
+ 
+:: initializing oneAPI environment ...
+   slurm_script: BASH_VERSION = 4.4.20(1)-release
+   args: Using "$@" for setvars.sh arguments: 
+:: advisor -- latest
+:: ccl -- latest
+:: clck -- latest
+:: compiler -- latest
+:: dal -- latest
+:: debugger -- latest
+:: dev-utilities -- latest
+:: dnnl -- latest
+:: dpcpp-ct -- latest
+:: dpl -- latest
+:: inspector -- latest
+:: ipp -- latest
+:: ippcp -- latest
+:: ipp -- latest
+:: itac -- latest
+:: mkl -- latest
+:: mpi -- latest
+:: tbb -- latest
+:: vtune -- latest
+:: oneAPI environment initialized ::
+ 
+job start time is Tue Dec 3 11:52:27 -05 2024
++ srun -N1 -n1 --cpu_bind=cores -l --nodelist=gn01 --cpus-per-task=96 singularity exec --nv -B /home/urso -B /scratch --pwd /home/urso/PavicHDR/logs /home/urso/.lico/container/Python.sif bash /home/urso/PavicHDR/train.sh
+0: ===> Start training 
+0: 
+0:         Dataset dir:     /home/urso/Datasets/Kalantari/
+0:         Subset:          sig17_training_crop128_stride64
+0:         Epochs:          100
+0:         Batch size:      64
+0:         Learning rate:   0.0002
+0:         Training size:   68376
+0:         Device:          cuda
+0:         
+0: Traceback (most recent call last):
+0:   File "/home/urso/PavicHDR/train.py", line 344, in <module>
+0:     main()
+0:   File "/home/urso/PavicHDR/train.py", line 338, in main
+0:     train(args, model, device, train_loader, optimizer, epoch, criterion)
+0:   File "/home/urso/PavicHDR/train.py", line 119, in train
+0:     pred = model(batch_ldr0, batch_ldr1, batch_ldr2)
+0:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+0:   File "/home/urso/PavicHDR/venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+0:     return self._call_impl(*args, **kwargs)
+0:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+0:   File "/home/urso/PavicHDR/venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+0:     return forward_call(*args, **kwargs)
+0:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+0:   File "/home/urso/PavicHDR/venv/lib/python3.11/site-packages/torch/nn/parallel/data_parallel.py", line 193, in forward
+0:     outputs = self.parallel_apply(replicas, inputs, module_kwargs)
+0:               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+0:   File "/home/urso/PavicHDR/venv/lib/python3.11/site-packages/torch/nn/parallel/data_parallel.py", line 212, in parallel_apply
+0:     return parallel_apply(
+0:            ^^^^^^^^^^^^^^^
+0:   File "/home/urso/PavicHDR/venv/lib/python3.11/site-packages/torch/nn/parallel/parallel_apply.py", line 126, in parallel_apply
+0:     output.reraise()
+0:   File "/home/urso/PavicHDR/venv/lib/python3.11/site-packages/torch/_utils.py", line 715, in reraise
+0:     raise exception
+0: torch.OutOfMemoryError: Caught OutOfMemoryError in replica 0 on device 0.
+0: Original Traceback (most recent call last):
+0:   File "/home/urso/PavicHDR/venv/lib/python3.11/site-packages/torch/nn/parallel/parallel_apply.py", line 96, in _worker
+0:     output = module(*input, **kwargs)
+0:              ^^^^^^^^^^^^^^^^^^^^^^^^
+0:   File "/home/urso/PavicHDR/venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+0:     return self._call_impl(*args, **kwargs)
+0:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+0:   File "/home/urso/PavicHDR/venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+0:     return forward_call(*args, **kwargs)
+0:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+0:   File "/home/urso/PavicHDR/models/PavicHDR.py", line 109, in forward
+0:     x = self.refinement(x_m)
+0:         ^^^^^^^^^^^^^^^^^^^^
+0:   File "/home/urso/PavicHDR/venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+0:     return self._call_impl(*args, **kwargs)
+0:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+0:   File "/home/urso/PavicHDR/venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+0:     return forward_call(*args, **kwargs)
+0:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+0:   File "/home/urso/PavicHDR/models/model.py", line 620, in forward
+0:     out_dec_level2 = self.decoder_level2(inp_dec_level2)
+0:                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+0:   File "/home/urso/PavicHDR/venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+0:     return self._call_impl(*args, **kwargs)
+0:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+0:   File "/home/urso/PavicHDR/venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+0:     return forward_call(*args, **kwargs)
+0:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+0:   File "/home/urso/PavicHDR/venv/lib/python3.11/site-packages/torch/nn/modules/container.py", line 250, in forward
+0:     input = module(input)
+0:             ^^^^^^^^^^^^^
+0:   File "/home/urso/PavicHDR/venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+0:     return self._call_impl(*args, **kwargs)
+0:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+0:   File "/home/urso/PavicHDR/venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+0:     return forward_call(*args, **kwargs)
+0:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+0:   File "/home/urso/PavicHDR/models/model.py", line 196, in forward
+0:     x = x + self.ffn(self.norm2(x))
+0:             ^^^^^^^^^^^^^^^^^^^^^^^
+0:   File "/home/urso/PavicHDR/venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+0:     return self._call_impl(*args, **kwargs)
+0:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+0:   File "/home/urso/PavicHDR/venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+0:     return forward_call(*args, **kwargs)
+0:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+0:   File "/home/urso/PavicHDR/models/model.py", line 98, in forward
+0:     x = self.project_in(x)
+0:         ^^^^^^^^^^^^^^^^^^
+0:   File "/home/urso/PavicHDR/venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+0:     return self._call_impl(*args, **kwargs)
+0:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+0:   File "/home/urso/PavicHDR/venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+0:     return forward_call(*args, **kwargs)
+0:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+0:   File "/home/urso/PavicHDR/venv/lib/python3.11/site-packages/torch/nn/modules/conv.py", line 554, in forward
+0:     return self._conv_forward(input, self.weight, self.bias)
+0:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+0:   File "/home/urso/PavicHDR/venv/lib/python3.11/site-packages/torch/nn/modules/conv.py", line 549, in _conv_forward
+0:     return F.conv2d(
+0:            ^^^^^^^^^
+0: torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 220.00 MiB. GPU 0 has a total capacity of 39.39 GiB of which 50.69 MiB is free. Including non-PyTorch memory, this process has 39.33 GiB memory in use. Of the allocated memory 37.69 GiB is allocated by PyTorch, and 537.02 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+0: 
+srun: error: gn01: task 0: Exited with exit code 1
++ set +x
+job end time is Tue Dec 3 11:53:41 -05 2024

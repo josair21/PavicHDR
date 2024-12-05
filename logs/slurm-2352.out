@@ -1,0 +1,71 @@
+ 
+:: initializing oneAPI environment ...
+   slurm_script: BASH_VERSION = 4.4.20(1)-release
+   args: Using "$@" for setvars.sh arguments: 
+:: advisor -- latest
+:: ccl -- latest
+:: clck -- latest
+:: compiler -- latest
+:: dal -- latest
+:: debugger -- latest
+:: dev-utilities -- latest
+:: dnnl -- latest
+:: dpcpp-ct -- latest
+:: dpl -- latest
+:: inspector -- latest
+:: ipp -- latest
+:: ippcp -- latest
+:: ipp -- latest
+:: itac -- latest
+:: mkl -- latest
+:: mpi -- latest
+:: tbb -- latest
+:: vtune -- latest
+:: oneAPI environment initialized ::
+ 
+job start time is Thu Dec 5 09:27:46 -05 2024
++ srun -N1 -n1 --cpu_bind=cores -l --nodelist=gn03 --cpus-per-task=96 singularity exec --nv -B /home/urso -B /scratch --pwd /home/urso/PavicHDR/logs /home/urso/.lico/container/Python.sif bash /home/urso/PavicHDR/test.sh
+0: /home/urso/PavicHDR/test.py:48: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+0:   model.load_state_dict(torch.load(f"{args.ckpt}")['state_dict'])
+0: >>>>>>>>> Start Testing >>>>>>>>>
+0: Load weights from:  /home/urso/PavicHDR/runs/train_2/best_checkpoint.pth
+0: 2000
+0: cuda:0
+0: 15
+0: (1, 3, 1000, 1500)
+0:  0 | PSNR_mu: 47.0720  PSNR_l: 51.8716 | SSIM_mu: 0.9969  SSIM_l: 0.9994 Seconds: 1.1603012084960938  GPU: 148.88
+0: (1, 3, 1000, 1500)
+0:  1 | PSNR_mu: 44.4451  PSNR_l: 57.4837 | SSIM_mu: 0.9929  SSIM_l: 0.9997 Seconds: 0.004243135452270508  GPU: 148.88
+0: (1, 3, 1000, 1500)
+0:  2 | PSNR_mu: 46.0576  PSNR_l: 45.5293 | SSIM_mu: 0.9960  SSIM_l: 0.9992 Seconds: 0.0038111209869384766  GPU: 148.88
+0: (1, 3, 1000, 1500)
+0:  3 | PSNR_mu: 42.0272  PSNR_l: 46.2863 | SSIM_mu: 0.9798  SSIM_l: 0.9985 Seconds: 0.003625631332397461  GPU: 148.88
+0: (1, 3, 1000, 1500)
+0:  4 | PSNR_mu: 41.3780  PSNR_l: 44.4985 | SSIM_mu: 0.9867  SSIM_l: 0.9971 Seconds: 0.00445246696472168  GPU: 148.88
+0: (1, 3, 1000, 1500)
+0:  5 | PSNR_mu: 41.1838  PSNR_l: 33.4378 | SSIM_mu: 0.9833  SSIM_l: 0.9943 Seconds: 0.003653287887573242  GPU: 148.88
+0: (1, 3, 1000, 1500)
+0:  6 | PSNR_mu: 38.4665  PSNR_l: 25.2920 | SSIM_mu: 0.9820  SSIM_l: 0.9529 Seconds: 0.0037670135498046875  GPU: 148.88
+0: (1, 3, 1000, 1500)
+0:  7 | PSNR_mu: 32.4547  PSNR_l: 21.1195 | SSIM_mu: 0.9887  SSIM_l: 0.9501 Seconds: 0.003185272216796875  GPU: 148.88
+0: (1, 3, 1000, 1500)
+0:  8 | PSNR_mu: 39.9022  PSNR_l: 28.5563 | SSIM_mu: 0.9894  SSIM_l: 0.9638 Seconds: 0.004748106002807617  GPU: 148.88
+0: (1, 3, 1000, 1500)
+0:  9 | PSNR_mu: 36.2174  PSNR_l: 23.1459 | SSIM_mu: 0.9873  SSIM_l: 0.9488 Seconds: 0.0037398338317871094  GPU: 148.88
+0: (1, 3, 1000, 1500)
+0:  10 | PSNR_mu: 43.7561  PSNR_l: 37.8743 | SSIM_mu: 0.9960  SSIM_l: 0.9949 Seconds: 0.004146099090576172  GPU: 148.88
+0: (1, 3, 1000, 1500)
+0:  11 | PSNR_mu: 46.0384  PSNR_l: 45.7392 | SSIM_mu: 0.9960  SSIM_l: 0.9992 Seconds: 0.0031800270080566406  GPU: 148.88
+0: (1, 3, 1000, 1500)
+0:  12 | PSNR_mu: 50.3825  PSNR_l: 64.4524 | SSIM_mu: 0.9978  SSIM_l: 0.9999 Seconds: 0.0036013126373291016  GPU: 148.88
+0: (1, 3, 1000, 1500)
+0:  13 | PSNR_mu: 41.3113  PSNR_l: 44.3607 | SSIM_mu: 0.9864  SSIM_l: 0.9971 Seconds: 0.003693819046020508  GPU: 148.88
+0: (1, 3, 1000, 1500)
+0:  14 | PSNR_mu: 42.4766  PSNR_l: 39.1647 | SSIM_mu: 0.9846  SSIM_l: 0.9969 Seconds: 0.004107475280761719  GPU: 148.88
+0: Average PSNR_mu: 42.2113  PSNR_l: 40.5875
+0: Average SSIM_mu: 0.9896  SSIM_l: 0.9861
+0: Average time 0.08095038731892903
+0: Average GPU Mem 148.87890625
+0: >>>>>>>>> Finish Testing >>>>>>>>>
++ set +x
+job end time is Thu Dec 5 09:29:08 -05 2024
